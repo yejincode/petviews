@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     android:paddingStart="20dp"
     android:paddingEnd="20dp"
@@ -60,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                app:queryHint="검색어를 입력하시오" >
+                app:queryHint="검색어를 입력하시오">
 
             </SearchView>
 
