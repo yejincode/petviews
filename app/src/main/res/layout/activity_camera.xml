@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cameraActivity"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="40dp">
+
+        <ImageButton
+            android:id="@+id/backButton_camera"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_button"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/back"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="269dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="위험 물질 추가"
+            android:textColor="#1D1617" />
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_button"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:scrollbarSize="4dp"
+            app:srcCompat="@drawable/dots"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_danger"
+                android:layout_width="wrap_content"
+                android:layout_height="262dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/basic_image" />
+
+            <Button
+                android:id="@+id/button_photo"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/back_color"
+                android:text="위험물질 촬영"
+                android:textColor="#FFFFFF"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/edittext_danger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:ems="10"
+                android:hint="촬영한 위험물질에 대해 설명해주세요."
+                android:inputType="textPersonName"
+                android:textColor="#1D1617"
+                android:textColorHint="#7B6F72"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/back_color"
+                android:text="제출하기"
+                android:textColor="#FFFFFF"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
