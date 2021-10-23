@@ -48,78 +48,148 @@
 
     </LinearLayout>
 
-    <ScrollView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    app:queryHint="검색어를 입력하시오">
+
+                </SearchView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="등록된 이물질"
+                    android:textColor="#1D1617"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview_interest"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="최근 반려견 관심사"
+                    android:textColor="#1D1617"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview_interest2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+        </ScrollView>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:orientation="horizontal">
 
-            <SearchView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                app:queryHint="검색어를 입력하시오">
+            <ImageButton
+                android:id="@+id/tab_home"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back_white"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/navbar_home"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-            </SearchView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="등록된 이물질"
-                android:textColor="#1D1617"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/recyclerview_interest"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" />
-                </LinearLayout>
-            </ScrollView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="최근 반려견 관심사"
-                android:textColor="#1D1617"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/recyclerview_interest2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" />
-                </LinearLayout>
-            </ScrollView>
+            <ImageButton
+                android:id="@+id/tab_photo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="45dp"
+                android:background="@drawable/back_white"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/navbar_photo"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="80dp" />
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/tab_camera"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="45dp"
+                android:background="@drawable/back_white"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/navbar_camera"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/tab_profile"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|end"
+                android:background="@drawable/back_white"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/navbar_profile"
+                tools:ignore="SpeakableTextPresentCheck" />
+
         </LinearLayout>
-    </ScrollView>
+
+        <ImageView
+            android:id="@+id/tab_search"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/navbar_search" />
+
+    </FrameLayout>
 
 
 </LinearLayout>
