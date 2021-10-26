@@ -9,15 +9,19 @@
         <entry key="..\:/Android_Project/petviews/app/src/main/res/drawable/external.xml" value="0.28125" />
         <entry key="..\:/Android_Project/petviews/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2564814814814815" />
         <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/activity_camera.xml" value="0.264" />
-        <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/activity_highlight.xml" value="0.1" />
+        <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/activity_foreignnoti.xml" value="0.2390625" />
+        <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/activity_highlight.xml" value="0.2" />
         <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/activity_interest.xml" value="0.176" />
         <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/activity_livevideo.xml" value="0.144" />
-        <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/activity_pastvideo.xml" value="0.4" />
+        <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/activity_setting.xml" value="0.264" />
         <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/activity_welcome.xml" value="0.26510416666666664" />
-        <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/interest_list.xml" value="0.1" />
+        <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/foreignnoti_list.xml" value="0.264" />
+        <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/interest_list.xml" value="0.4" />
         <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/navi_bar.xml" value="0.25364583333333335" />
-        <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/video_list.xml" value="0.264" />
+        <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/textpastvideo_list.xml" value="0.6" />
+        <entry key="..\:/Android_Project/petviews/app/src/main/res/layout/video_list.xml" value="0.4" />
       </map>
     </option>
   </component>
