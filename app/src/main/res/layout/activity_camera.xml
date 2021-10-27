@@ -17,7 +17,7 @@
         android:paddingTop="40dp">
 
         <ImageButton
-            android:id="@+id/backButton_camera"
+            android:id="@+id/backButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/back_button"
@@ -32,8 +32,14 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:gravity="center"
+            android:textSize="16sp"
             android:text="위험 물질 추가"
-            android:textColor="#1D1617" />
+            android:textColor="#1D1617"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
 
     </LinearLayout>
 
@@ -55,14 +61,15 @@
                     android:id="@+id/image_danger"
                     android:layout_width="wrap_content"
                     android:layout_height="262dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/basic_image" />
 
                 <Button
                     android:id="@+id/button_photo"
-                    android:layout_width="135dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/back_color"
                     android:text="위험물질 촬영"
                     android:textColor="#FFFFFF"
@@ -73,19 +80,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="50dp"
+                    android:backgroundTint="#D1D1D1"
                     android:ems="10"
+                    android:gravity="start"
                     android:hint="촬영한 위험물질에 대해 설명해주세요."
-                    android:inputType="textPersonName"
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
                     android:textColor="#1D1617"
-                    android:textColorHint="#7B6F72"
+                    android:textColorHint="#D1D1D1"
+                    android:textSize="14sp"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <Button
                     android:id="@+id/button_submit"
-                    android:layout_width="135dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="30dp"
+                    android:layout_width="115dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal|end"
+                    android:layout_marginTop="5dp"
                     android:background="@drawable/back_color"
                     android:text="제출하기"
                     android:textColor="#FFFFFF"

@@ -17,7 +17,7 @@
         android:paddingTop="40dp">
 
         <ImageButton
-            android:id="@+id/backButton_interest"
+            android:id="@+id/backButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/back_button"
@@ -32,7 +32,13 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="관심도 측정"
-            android:textColor="#1D1617" />
+            android:textSize="16sp"
+            android:textColor="#1D1617"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
 
     </LinearLayout>
 

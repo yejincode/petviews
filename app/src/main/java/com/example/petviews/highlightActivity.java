@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 
@@ -24,7 +23,14 @@ public class highlightActivity extends AppCompatActivity {
     private RecyclerView recyclerView2;
     private LinearLayoutManager linearLayoutManager2;
 
+    //뒤로 가기
+    ImageButton backButton;
+
+    //하단 네비바
     ImageButton tab_home;
+    ImageButton tab_photo;
+    ImageButton tab_camera;
+    ImageButton tab_profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,12 +67,21 @@ public class highlightActivity extends AppCompatActivity {
         arrayList2.add(videodata4);
         videoadapter2.notifyDataSetChanged();
 
+        // 뒤로가기 버튼
+        backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            } //액티비티 종료시킴
+        });
+
         // 하단 탭 홈버튼
         tab_home = findViewById(R.id.tab_home);
         tab_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(),MainActivity.class);
+                Intent intent = new Intent(view.getContext(),settingActivity.class);
                 startActivity(intent);
             }
         });

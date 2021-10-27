@@ -18,10 +18,15 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout layout_interest;
     LinearLayout layout_livevideo;
     LinearLayout layout_highlight;
+
+    // 하단 네비바
     ImageButton tab_home;
     ImageButton tab_photo;
     ImageButton tab_camera;
     ImageButton tab_profile;
+
+    //뒤로 가기
+    ImageButton backButton;
 
 
     @Override
@@ -79,18 +84,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 뒤로가기 버튼
+        backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            } //액티비티 종료시킴
+        });
+
 
         // 하단 탭
 
-//        // 하단 탭 홈버튼
-//        tab_home = findViewById(R.id.tab_home);
-//        tab_home.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(view.getContext(),MainActivity.class);
-//                startActivity(intent); //홈에서 홈..? 이렇게 이어주어야 할까..?
-//            }
-//        });
+        // 하단 탭 홈버튼
+        tab_home = findViewById(R.id.tab_home);
+        tab_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),settingActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // 하단 탭 사진버튼
         tab_photo = findViewById(R.id.tab_photo);

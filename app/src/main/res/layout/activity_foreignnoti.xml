@@ -17,7 +17,7 @@
         android:paddingTop="40dp">
 
         <ImageButton
-            android:id="@+id/backButton_foreignnoti"
+            android:id="@+id/backButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/back_button"
@@ -31,8 +31,14 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:gravity="center"
+            android:textSize="16sp"
             android:text="이물 알림"
-            android:textColor="#1D1617" />
+            android:textColor="#1D1617"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
 
     </LinearLayout>
 
