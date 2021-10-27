@@ -49,64 +49,136 @@
 
     </LinearLayout>
 
-    <ScrollView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp">
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_danger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="262dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/basic_image" />
+
+                <Button
+                    android:id="@+id/button_photo"
+                    android:layout_width="135dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/back_color"
+                    android:text="위험물질 촬영"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/edittext_danger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:ems="10"
+                    android:hint="촬영한 위험물질에 대해 설명해주세요."
+                    android:inputType="textPersonName"
+                    android:textColor="#1D1617"
+                    android:textColorHint="#7B6F72"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/button_submit"
+                    android:layout_width="135dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/back_color"
+                    android:text="제출하기"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/image_danger"
-                android:layout_width="wrap_content"
-                android:layout_height="262dp"
-                android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/basic_image" />
+            <ImageButton
+                android:id="@+id/tab_home"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back_white"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/navbar_home"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-            <Button
-                android:id="@+id/button_photo"
-                android:layout_width="135dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/back_color"
-                android:text="위험물질 촬영"
-                android:textColor="#FFFFFF"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <EditText
-                android:id="@+id/edittext_danger"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:ems="10"
-                android:hint="촬영한 위험물질에 대해 설명해주세요."
-                android:inputType="textPersonName"
-                android:textColor="#1D1617"
-                android:textColorHint="#7B6F72"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Button
-                android:id="@+id/button_submit"
-                android:layout_width="135dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/back_color"
-                android:text="제출하기"
-                android:textColor="#FFFFFF"
-                tools:ignore="TouchTargetSizeCheck" />
+            <ImageButton
+                android:id="@+id/tab_photo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="45dp"
+                android:background="@drawable/back_white"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/navbar_photo"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <View
-                android:id="@+id/view3"
-                android:layout_width="match_parent"
-                android:layout_height="80dp" />
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
 
+            <ImageButton
+                android:id="@+id/tab_camera"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="45dp"
+                android:background="@drawable/back_white"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/navbar_camera"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/tab_profile"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|end"
+                android:background="@drawable/back_white"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/navbar_profile"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
 
-    </ScrollView>
+        <ImageView
+            android:id="@+id/tab_search"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/navbar_search" />
+
+
+    </FrameLayout>
+
 
 </LinearLayout>

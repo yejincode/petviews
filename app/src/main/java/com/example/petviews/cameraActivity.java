@@ -13,6 +13,7 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import java.io.File;
@@ -22,6 +23,8 @@ public class cameraActivity extends AppCompatActivity {
     ImageView image_danger;
     File file;
     private Uri uri; //빼먹은 건가 에러나서 추가해봄,,,
+
+    ImageButton tab_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,18 @@ public class cameraActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 takePicture();
+            }
+        });
+
+        // 하단 탭
+
+        // 하단 탭 홈버튼
+        tab_home = findViewById(R.id.tab_home);
+        tab_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),MainActivity.class);
+                startActivity(intent);
             }
         });
     }

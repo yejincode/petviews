@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
@@ -19,6 +22,8 @@ public class interestActivity extends AppCompatActivity {
     private interestadapter2 interestadapter2;
     private RecyclerView recyclerView_interest2;
     private LinearLayoutManager linearLayoutManager_interest2;
+
+    ImageButton tab_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,5 +60,17 @@ public class interestActivity extends AppCompatActivity {
         interestdata2 interestdata2_2 = new interestdata2(R.drawable.basic_image,"사탕 7번");
         arrayList2.add(interestdata2_2);
         interestadapter.notifyDataSetChanged();
+
+
+
+        // 하단 탭 홈버튼
+        tab_home = findViewById(R.id.tab_home);
+        tab_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import java.util.ArrayList;
@@ -20,6 +23,8 @@ public class highlightActivity extends AppCompatActivity {
     private videoadapter2 videoadapter2;
     private RecyclerView recyclerView2;
     private LinearLayoutManager linearLayoutManager2;
+
+    ImageButton tab_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +60,16 @@ public class highlightActivity extends AppCompatActivity {
         videodata videodata4 = new videodata(R.drawable.basic_image,"sample");
         arrayList2.add(videodata4);
         videoadapter2.notifyDataSetChanged();
+
+        // 하단 탭 홈버튼
+        tab_home = findViewById(R.id.tab_home);
+        tab_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
