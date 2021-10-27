@@ -82,15 +82,15 @@ public class MainActivity extends AppCompatActivity {
 
         // 하단 탭
 
-        // 하단 탭 홈버튼
-        tab_home = findViewById(R.id.tab_home);
-        tab_home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(),MainActivity.class);
-                startActivity(intent); //홈에서 홈..? 이렇게 이어주어야 할까..?
-            }
-        });
+//        // 하단 탭 홈버튼
+//        tab_home = findViewById(R.id.tab_home);
+//        tab_home.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(view.getContext(),MainActivity.class);
+//                startActivity(intent); //홈에서 홈..? 이렇게 이어주어야 할까..?
+//            }
+//        });
 
         // 하단 탭 사진버튼
         tab_photo = findViewById(R.id.tab_photo);

@@ -35,18 +35,6 @@
             android:text="위험 물질 추가"
             android:textColor="#1D1617" />
 
-        <ImageButton
-            android:id="@+id/menuButton"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/back_button"
-            android:cropToPadding="false"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:scrollbarSize="4dp"
-            app:srcCompat="@drawable/dots"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
     </LinearLayout>
 
     <FrameLayout

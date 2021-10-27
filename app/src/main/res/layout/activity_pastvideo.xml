@@ -12,6 +12,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:id="@+id/button_explore"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/back_button2"
+        android:text="이물질 탐색하기"
+        android:textColor="#FFFFFF"
+        tools:ignore="TouchTargetSizeCheck" />
+
     <ImageButton
         android:id="@+id/backButton_pastvideo"
         android:layout_width="30dp"
@@ -23,14 +34,4 @@
         app:srcCompat="@drawable/back"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-    <Button
-        android:id="@+id/button_explore"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/back_button2"
-        android:text="이물질 탐색하기"
-        android:textColor="#FFFFFF"
-        tools:ignore="TouchTargetSizeCheck" />
 </FrameLayout>
