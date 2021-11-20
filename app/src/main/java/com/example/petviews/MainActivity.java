@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton tab_photo;
     ImageButton tab_camera;
     ImageButton tab_profile;
+    ImageView tab_search;
 
     //뒤로 가기
     ImageButton backButton;
@@ -100,18 +102,18 @@ public class MainActivity extends AppCompatActivity {
         tab_home = findViewById(R.id.tab_home);
         tab_home.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { //반려견의 화면(메인)
                 Intent intent = new Intent(view.getContext(),settingActivity.class);
                 startActivity(intent);
             }
         });
 
-        // 하단 탭 사진버튼
+        // 하단 탭 그래프버튼
         tab_photo = findViewById(R.id.tab_photo);
         tab_photo.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { //액티비티 무엇일지,,,,,,,,,
-                Intent intent = new Intent(view.getContext(),MainActivity.class);
+            public void onClick(View view) { //관심도 측정
+                Intent intent = new Intent(view.getContext(),interestActivity.class);
                 startActivity(intent);
             }
         });
@@ -120,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         tab_camera = findViewById(R.id.tab_camera);
         tab_camera.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { //카메라액티비티로 이어지는게 맞는지,,,
+            public void onClick(View view) { //이물질 추가
                 Intent intent = new Intent(view.getContext(),cameraActivity.class);
                 startActivity(intent);
             }
@@ -130,8 +132,18 @@ public class MainActivity extends AppCompatActivity {
         tab_profile = findViewById(R.id.tab_profile);
         tab_profile.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { //이건 또 어디로 이어지는건지,,,,
+            public void onClick(View view) { //프로필 화면
                 Intent intent = new Intent(view.getContext(),MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // 하단 탭 돋보기버튼
+        tab_search = findViewById(R.id.tab_search);
+        tab_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { //이물알림 화면
+                Intent intent = new Intent(view.getContext(),foreignnotiActivity.class);
                 startActivity(intent);
             }
         });
