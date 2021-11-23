@@ -75,7 +75,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="00님의 강아지 000"
+                            android:text="00님의 강아지 바다"
                             android:textColor="#1D1617"
                             android:textStyle="bold" />
 
@@ -103,7 +103,7 @@
                                 android:id="@+id/imageView2"
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
-                                app:srcCompat="@drawable/user" />
+                                app:srcCompat="@drawable/bada" />
 
                         </LinearLayout>
 
@@ -221,8 +221,8 @@
 
                 <VideoView
                     android:id="@+id/livevideo2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
                     android:layout_weight="1" />
 
 

@@ -67,7 +67,7 @@
                         android:layout_height="80dp"
                         android:layout_marginEnd="20dp"
                         android:layout_weight="0"
-                        app:srcCompat="@drawable/user" />
+                        app:srcCompat="@drawable/profile_pic" />
 
                     <LinearLayout
                         android:layout_width="match_parent"

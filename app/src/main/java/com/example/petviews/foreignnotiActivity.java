@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 
@@ -14,11 +15,12 @@ public class foreignnotiActivity extends AppCompatActivity {
     private ListView listview;
     private foreignnotiadapter adapter;
 
-    //하단 네비바
+    // 하단 네비바
     ImageButton tab_home;
     ImageButton tab_photo;
     ImageButton tab_camera;
     ImageButton tab_profile;
+    ImageView tab_search;
 
     //뒤로 가기
     ImageButton backButton;
@@ -37,8 +39,13 @@ public class foreignnotiActivity extends AppCompatActivity {
         listview.setAdapter(adapter);
         //listview.setOnItemClickListener(listener);
 
-        adapter.addItem("이물질을 탐지했습니다.", R.drawable.user, "2m/sc");
-        adapter.addItem("이물질을 탐지했습니다.", R.drawable.user, "2m/sc");
+        adapter.addItem("이물질을 탐지했습니다.", R.drawable.choco, "2m/2sc");
+        adapter.addItem("이물질을 탐지했습니다.", R.drawable.cigarette, "5m/13sc");
+        adapter.addItem("이물질을 탐지했습니다.", R.drawable.cake, "9m/35sc");
+        adapter.addItem("이물질을 탐지했습니다.", R.drawable.choco, "15m/17sc");
+        adapter.addItem("이물질을 탐지했습니다.", R.drawable.cake, "20m/56sc");
+        adapter.addItem("이물질을 탐지했습니다.", R.drawable.bone, "10m/1sc");
+        adapter.addItem("이물질을 탐지했습니다.", R.drawable.bone, "5m/13sc");
 
         adapter.notifyDataSetChanged(); //어댑터의 변경을 알림.
 
@@ -51,12 +58,54 @@ public class foreignnotiActivity extends AppCompatActivity {
             } //액티비티 종료시킴
         });
 
+        // 하단 탭
+
         // 하단 탭 홈버튼
         tab_home = findViewById(R.id.tab_home);
         tab_home.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { //반려견의 화면(메인)
                 Intent intent = new Intent(view.getContext(),settingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // 하단 탭 그래프버튼
+        tab_photo = findViewById(R.id.tab_photo);
+        tab_photo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { //관심도 측정
+                Intent intent = new Intent(view.getContext(),interestActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // 하단 탭 카메라버튼
+        tab_camera = findViewById(R.id.tab_camera);
+        tab_camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { //이물질 추가
+                Intent intent = new Intent(view.getContext(),cameraActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // 하단 탭 프로필버튼
+        tab_profile = findViewById(R.id.tab_profile);
+        tab_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { //프로필 화면
+                Intent intent = new Intent(view.getContext(),MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // 하단 탭 돋보기버튼
+        tab_search = findViewById(R.id.tab_search);
+        tab_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { //이물알림 화면
+                Intent intent = new Intent(view.getContext(),foreignnotiActivity.class);
                 startActivity(intent);
             }
         });
