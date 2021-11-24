@@ -45,7 +45,6 @@ public class foreignnotiActivity extends AppCompatActivity {
         adapter.addItem("이물질을 탐지했습니다.", R.drawable.choco, "15m/17sc");
         adapter.addItem("이물질을 탐지했습니다.", R.drawable.cake, "20m/56sc");
         adapter.addItem("이물질을 탐지했습니다.", R.drawable.bone, "10m/1sc");
-        adapter.addItem("이물질을 탐지했습니다.", R.drawable.bone, "5m/13sc");
 
         adapter.notifyDataSetChanged(); //어댑터의 변경을 알림.
 

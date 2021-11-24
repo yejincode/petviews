@@ -50,8 +50,14 @@ public class highlightActivity extends AppCompatActivity {
 
         videodata videodata = new videodata(R.drawable.capture1,"집 근처 산책");
         arrayList.add(videodata);
-        videodata videodata2 = new videodata(R.drawable.capture3,"엑스포 산책");
+        videodata videodata2 = new videodata(R.drawable.capture2,"엑스포 산책");
         arrayList.add(videodata2);
+        videodata videodata3 = new videodata(R.drawable.capture3,"산책");
+        arrayList.add(videodata3);
+        videodata videodata4 = new videodata(R.drawable.capture4,"신났음");
+        arrayList.add(videodata4);
+        videodata videodata5 = new videodata(R.drawable.capture5,"산책 중");
+        arrayList.add(videodata5);
         videoadapter1.notifyDataSetChanged();
 
         //과거영상
@@ -63,10 +69,16 @@ public class highlightActivity extends AppCompatActivity {
         videoadapter2 = new videoadapter2(arrayList2);
         recyclerView2.setAdapter(videoadapter2);
 
-        videodata videodata3 = new videodata(R.drawable.capture2,"놀러가서");
-        arrayList2.add(videodata3);
-        videodata videodata4 = new videodata(R.drawable.capture4,"서울");
-        arrayList2.add(videodata4);
+        videodata videodata6 = new videodata(R.drawable.capture6,"놀러가서");
+        arrayList2.add(videodata6);
+        videodata videodata7 = new videodata(R.drawable.capture7,"서울");
+        arrayList2.add(videodata7);
+        videodata videodata8 = new videodata(R.drawable.capture8,"집 앞에서");
+        arrayList2.add(videodata8);
+        videodata videodata9 = new videodata(R.drawable.capture9,"하이텐션");
+        arrayList2.add(videodata9);
+        videodata videodata10 = new videodata(R.drawable.capture10,"멍멍");
+        arrayList2.add(videodata10);
         videoadapter2.notifyDataSetChanged();
 
         // 뒤로가기 버튼
