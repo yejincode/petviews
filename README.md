@@ -7,7 +7,8 @@
 - 이물섭식이 탐지될 경우 반려견주에게 알람을 전송한다.
 
 
-
+#### 수상
+2021 제 8회 GIST Creative Space G AI&IoT 아이디어 메이커톤 경진대회 우수상
 
 #### 어플 화면 예
 <img src = "https://github.com/yejincode/petviews/assets/69861207/44184004-8355-43d7-a010-7ae6e25513ba" width="400">
