@@ -1,4 +1,7 @@
-![Screenshot_20211027-230714_petviews](https://github.com/yejincode/petviews/assets/69861207/6f6ba663-fcc9-4566-8bea-8b8ab90b1a04)
+### 반려견 이물섭식 탐지 어플
+
+***
+
 ![Screenshot_20211027-230458_petviews](https://github.com/yejincode/petviews/assets/69861207/44184004-8355-43d7-a010-7ae6e25513ba)
 ![Screenshot_20211027-230517_petviews](https://github.com/yejincode/petviews/assets/69861207/7a9c4154-896c-4369-b3b3-dd2ebca4f878)
 ![Screenshot_20211027-230724_petviews](https://github.com/yejincode/petviews/assets/69861207/706e804e-56f4-4ff0-9e14-f5aadc6645b1)
